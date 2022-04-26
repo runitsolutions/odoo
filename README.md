@@ -39,24 +39,7 @@ Se listan los playbooks incluidos en esta colección.
 
 | Nombre | Descripción | Ejecución |
 | --- | --- | --- |
-| [test_playbook](playbooks/test_playbook.yml) | Playbook de prueba. | `ansible-playbook runit.infra.test_playbook -i inventory.yml -l mi_grupo` |
-
-Puede ejecutar un *playbook* con un comando similar a:
-
-```
-ansible-playbook runit.odoo.test_playbook \
-    -i ~/.ansible/collections/ansible_collections/runit/odoo/inventory \
-    -l mi_grupo --ask-vault-pass
-```
-
-Si quiere pasar variables externas puede usar el comando:
-
-```
-ansible-playbook runit.odoo.test_playbook \
-    -i ~/.ansible/collections/ansible_collections/runit/odoo/inventory \
-    -l mi_dominio.org \
-    -e @/home/user/mis-vars.yml
-```
+| [odoo](playbooks/odoo.yml) | Instala y configura Odoo. | `ansible-playbook runit.odoo.odoo -i inventory.yml -l mi_grupo` |
 
 ## Roles
 
@@ -64,8 +47,7 @@ Se listan los roles incluidos en esta colección.
 
 | Nombre | Descripción |
 | --- | --- |
-| [test_role](roles/test_role/README.md) | Rol de prueba. |
-
+| [odoo](roles/odoo/README.md) | Instala y configura Odoo. |
 
 ## Dependencias
 
@@ -75,7 +57,7 @@ Se listan los roles incluidos en esta colección.
 
 ### Roles
 
-- [geerlingguy.pip](https://github.com/geerlingguy/ansible-role-pip).
+- [coopdevs.odoo-role](https://github.com/coopdevs/odoo-role).
 
 ### Python
 
