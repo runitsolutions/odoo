@@ -1,0 +1,33 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+lint: flake8
+platforms:
+  - name: ubuntu
+    image: geerlingguy/docker-ubuntu1804-ansible
+    pre_build_image: true
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+scenario:
+  name: default
+  test_sequence:
+    - dependency
+    - lint
+    - cleanup
+    - destroy
+    - syntax
+    - create
+    - prepare
+    - converge
+    - verify
+    - idempotence
+    - cleanup
+    - destroy
+verifier:
+  name: ansible
+  lint:
+    name: flake8

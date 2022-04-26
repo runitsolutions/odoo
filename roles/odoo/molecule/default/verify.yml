@@ -1,0 +1,16 @@
+---
+- name: Verify
+  hosts: all
+  gather_facts: false
+  vars_files: ../../defaults/main.yml
+
+  tasks:
+    - name: Obtiene información de los paquetes.
+      package_facts:
+      register: packages_state
+
+    - name: Verifica que el paquete mount está instalado.
+      debug:
+        msg: 'mount está instalado'
+      failed_when:
+        packages_state.ansible_facts.packages['mount'] is not defined

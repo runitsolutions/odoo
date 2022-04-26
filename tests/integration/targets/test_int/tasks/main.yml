@@ -1,0 +1,19 @@
+---
+- name: Instala colecciones dependencia.
+  command: ansible-galaxy collection install '{{ item }}'
+  loop:
+    - community.general
+
+- name: Instala roles dependencia.
+  command: ansible-galaxy install '{{ item }}'
+  loop:
+    - geerlingguy.pip
+
+- name: Ejecuta el playbook test_playbook.
+  include_role:
+    name: '{{ role_item }}'
+  loop:
+    - geerlingguy.pip
+    - test_playbook
+  loop_control:
+    loop_var: role_item

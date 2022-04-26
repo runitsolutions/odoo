@@ -1,0 +1,3 @@
+---
+odoo_role_odoo_version: '12.0'
+odoo_role_odoo_url: https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.buster_amd64.deb

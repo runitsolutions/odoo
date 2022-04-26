@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+ansible = ">=2.11"
+cryptography = "*"
+docker = "*"
+flake8 = "*"
+'molecule[docker]' = "*"
+voluptuous = "*"
+yamllint = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "*"

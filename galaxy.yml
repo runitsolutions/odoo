@@ -1,0 +1,30 @@
+---
+namespace: runit
+
+name: odoo
+
+version: 1.0.0
+
+readme: README.md
+
+authors:
+- runit
+
+description: Instala y configura Odoo.
+
+license_file: 'LICENSE'
+
+tags:
+  - odoo
+  - runit
+
+dependencies:
+  'community.general': '*'
+
+repository: https://github.com/runitcr/odoo
+
+documentation: https://github.com/runitcr/odoo
+
+homepage: https://github.com/runitcr/odoo
+
+issues: https://github.com/runitcr/odoo/-/issues

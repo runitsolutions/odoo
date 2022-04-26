@@ -1,0 +1,13 @@
+---
+- name: Instala y configura Odoo.
+  become: true
+  hosts: all
+
+  pre_tasks:
+    - name: Actualiza el sistema.
+      apt:
+        upgrade: true
+        update_cache: true
+
+  roles:
+    - runit.odoo.odoo
