@@ -21,7 +21,7 @@ Para instalar la colección ejecute los siguientes pasos.
 Instale la colección:
 
 ```
-ansible-galaxy collection install git@github.com:runitcr/odoo.git
+ansible-galaxy collection install git@github.com:runitsolutions/odoo.git
 ```
 
 Esto instalará la colección en la ruta
@@ -80,7 +80,7 @@ Si desea modificar la colección por ejemplo para agregar variables o
 para modificar un rol, **debe clonar** el repositorio de la colección:
 
 ```
-git clone git@git.runitcr.org:runit/odoo.git ansible_collections/runit/odoo
+git clone git@github.com:runitsolutions/odoo.git ansible_collections/runit/odoo
 ```
 
 El repositorio se clonará en la ruta `ansible_collections/runit/odoo`,
