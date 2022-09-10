@@ -10,4 +10,4 @@
         update_cache: true
 
   roles:
-    - runit.odoo.odoo
+    - runitsolutions.roles.odoo
