@@ -1,3 +1,7 @@
 ---
 collections:
-  - community.general
+  - ansible.posix
+  - community.docker
+  - name: runit.odoo
+    src: git+https://github.com/runitsolutions/odoo
+    scm: git
