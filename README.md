@@ -53,7 +53,7 @@ Se listan los roles incluidos en esta colección.
 
 ### Colecciones
 
-- [community.general](https://docs.ansible.com/ansible/latest/collections/community/general/index.html).
+- [runit.odoo](https://docs.ansible.com/ansible/latest/collections/community/general/index.html).
 
 ### Roles
 

@@ -2,7 +2,7 @@
 - name: Instala colecciones dependencia.
   command: ansible-galaxy collection install '{{ item }}'
   loop:
-    - community.general
+    - runit.odoo
 
 - name: Instala roles dependencia.
   command: ansible-galaxy install '{{ item }}'

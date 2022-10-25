@@ -19,7 +19,7 @@ tags:
   - runit
 
 dependencies:
-  'community.general': '*'
+  'runit.odoo': '*'
 
 repository: https://github.com/runitcr/odoo
 
