@@ -1,6 +1,6 @@
 ---
 collections:
-  - community.general
+  - runit.odoo
 
 roles:
   - coopdevs.odoo-role
